@@ -1,0 +1,25 @@
+{
+	"scenarioName": "user_creation_test",
+	"steps": [{
+		"name": "create_user_successfully",
+		"method": "POST",
+		"url": "/api/users",
+		"request": {
+			"body": {
+				"name": "T-Xor",
+				"job": "Test Engineer"
+
+			}
+		},
+
+		"assertions": {
+			"status": 201,
+			"body": {
+
+				"name": "T-Xor",
+				"job": "Test Engineer"
+
+			}
+		}
+	}]
+}

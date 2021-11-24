@@ -1,0 +1,23 @@
+{
+	"scenarioName": "login_successful",
+	"steps": [{
+		"name": "login_successful",
+		"method": "POST",
+		"url": "/api/login",
+		"request": {
+			"body": {
+			    "email": "eve.holt@reqres.in"
+
+			}
+		},
+
+		"assertions": {
+			"status": 400,
+			"body": {
+
+				"error": "Missing password"
+
+			}
+		}
+	}]
+}

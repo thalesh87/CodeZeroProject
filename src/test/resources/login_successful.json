@@ -1,0 +1,24 @@
+{
+	"scenarioName": "login_successful",
+	"steps": [{
+		"name": "login_successful",
+		"method": "POST",
+		"url": "/api/login",
+		"request": {
+			"body": {
+			    "email": "eve.holt@reqres.in",
+			    "password": "cityslicka"
+
+			}
+		},
+
+		"assertions": {
+			"status": 200,
+			"body": {
+
+				"token": "QpwL5tke4Pnpja7X4"
+
+			}
+		}
+	}]
+}
